@@ -1,0 +1,6 @@
+[user]
+	name = StepaniaH
+	email = StepaniaH0907@gmail.com
+
+[core]
+  excludesfile = ~/.config/git/ignore
