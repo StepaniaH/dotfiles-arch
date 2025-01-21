@@ -34,3 +34,8 @@ HISTFILE=~/.config/zsh/.zsh_hist                                     # Where to 
 
 export EZA_CONFIG_DIR="$HOME/.config/eza"
 
+# Start
+if uwsm check may-start; then
+  uwsm start hyprland.desktop || echo "uwsm failed to start Hyprland" >> ~/uwsm_error.log
+  exec zsh
+fi
