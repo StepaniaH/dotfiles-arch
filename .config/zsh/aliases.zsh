@@ -5,7 +5,8 @@ alias ll='eza -lah'                                    # list with colors and lo
 alias c='clear'                                        # clear terminal
 alias h='history'                                      # show history
 alias g='lazygit'                                      # git gui Lazygit
-alias f='fastfetch'                                     # show neofetch
+alias f='fastfetch'                                    # show neofetch
 alias vim='nvim', vi='nvim', v='nvim'                  # neovim 
-# alias cal='calcurse'                                   # calcurse
-# alias news='newsboat'                                  # newsboat
+alias cat='bat'                                        # bat
+# alias cal='calcurse'                                 # calcurse
+# alias news='newsboat'                                # newsboat

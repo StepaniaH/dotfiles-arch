@@ -33,6 +33,7 @@ $time\
 
 palette = 'theme'
 
+
 # Defines the colour palette for the theme
 [palettes.theme]
 bar_one = '#C0CAF5'
