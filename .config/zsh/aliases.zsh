@@ -10,3 +10,6 @@ alias vim='nvim', vi='nvim', v='nvim'                  # neovim
 alias cat='bat'                                        # bat
 # alias cal='calcurse'                                 # calcurse
 # alias news='newsboat'                                # newsboat
+#
+
+alias zh="LANG=zh_CN.UTF-8"
