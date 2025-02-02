@@ -10,7 +10,9 @@ return {
       require('telescope').setup {
         pickers = {
           find_files = {
-            theme = "ivy"
+            theme = "ivy",
+            hidden = true,
+            follow = true,
           }
         }
       }
