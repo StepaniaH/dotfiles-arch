@@ -14,3 +14,10 @@ opt.shiftwidth = 2
 opt.clipboard = "unnamedplus"
 opt.spell = false
 
+vim.api.nvim_create_autocmd("TextYankPost", {
+  desc = "Highlight when yanking (copying) text",
+  group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+  callback = function()
+    vim.highlight.on_yank()
+  end
+})
