@@ -1,8 +1,8 @@
 local opt = vim.opt
 local g = vim.g
 
-g.mapleader = ' '
-g.maplocalleader = '\\'
+g.mapleader = " "
+g.maplocalleader = "\\"
 g.autoformat = false
 
 opt.number = true
@@ -19,5 +19,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
   callback = function()
     vim.highlight.on_yank()
+  end
+})
+
+vim.api.nvim_create_autocmd("TermOpen", {
+  group = vim.api.nvim_create_augroup("custom-term-open", { clear = true }),
+  callback = function()
+    vim.opt.number = false
+    vim.opt.relativenumber = false
   end
 })
