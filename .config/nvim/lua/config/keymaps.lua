@@ -26,4 +26,4 @@ end)
 
 vim.keymap.set("n", "-", "<cmd>Oil<CR>")
 
-vim.keymap.set("n", "<leader>rb", "<cmd>ToggleBool<CR>")
+vim.keymap.set("n", "<leader>tb", "<cmd>ToggleBool<CR>")
