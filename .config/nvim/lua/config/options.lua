@@ -4,6 +4,7 @@ local g = vim.g
 g.mapleader = " "
 g.maplocalleader = "\\"
 g.autoformat = false
+g.have_nerd_font = true
 
 opt.number = true
 opt.relativenumber = true
@@ -13,6 +14,23 @@ opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.clipboard = "unnamedplus"
 opt.spell = false
+opt.ignorecase = true
+opt.smartcase = true
+opt.signcolumn = 'yes'
+opt.splitright = true
+opt.splitbelow = true
+opt.list = true -- See `help 'list'`
+opt.listchars = {
+  space = "·",
+  tab = "▸ ",
+  nbsp = "␣",
+  trail = "·",
+  extends = "⟩",
+  precedes = "⟨",
+}
+opt.inccommand = "split"
+opt.cursorline = true
+opt.scrolloff = 10
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
