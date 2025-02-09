@@ -33,6 +33,7 @@ opt.inccommand = "split"
 opt.cursorline = true
 opt.scrolloff = 10
 opt.breakindent = true
+opt.termguicolors = true
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",

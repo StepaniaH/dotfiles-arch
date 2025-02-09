@@ -14,9 +14,18 @@ local function toggle_bool()
     return
   end
 
+  local cursor_row, cursor_col = unpack(vim.api.nvim_win_get_cursor(0))
   local line = vim.fn.getline('.')
-  local new_line = string.gsub(line, word, toggle_word)
-  vim.fn.setline('.', new_line)
+
+  local word_start = vim.fn.searchpos(word, 'bcn', cursor_row)[2]
+  local word_end = vim.fn.searchpos(word, 'cen', cursor_row)[2]
+
+  if cursor_col >= word_start and cursor_col <= word_end then
+    local prefix = line:sub(1, word_start - 1)
+    local suffix = line:sub(word_end + 1)
+    local new_line = prefix .. toggle_word .. suffix
+    vim.fn.setline('.', new_line)
+  end
 end
 
 vim.api.nvim_create_user_command("ToggleBool", toggle_bool, {})
