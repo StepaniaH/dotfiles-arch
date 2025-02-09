@@ -5,6 +5,8 @@ vim.keymap.set("v", "<leader>x", ":lua<CR>")
 vim.keymap.set("n", "<M-j>", "<cmd>cnext<CR>")
 vim.keymap.set("n", "<M-k>", "<cmd>cprev<CR>")
 
+vim.keymap.set("n", "<leader>lu", "<cmd>:Lazy update<CR>", { noremap = true, silent = true })
+
 local job_id = 0
 vim.keymap.set("n", "<leader>st", function()
   vim.cmd.vnew()

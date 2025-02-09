@@ -13,6 +13,7 @@ opt.tabstop = 2
 opt.softtabstop = 2
 opt.shiftwidth = 2
 opt.clipboard = "unnamedplus"
+opt.mouse = 'a'
 opt.spell = false
 opt.ignorecase = true
 opt.smartcase = true
@@ -31,6 +32,7 @@ opt.listchars = {
 opt.inccommand = "split"
 opt.cursorline = true
 opt.scrolloff = 10
+opt.breakindent = true
 
 vim.api.nvim_create_autocmd("TextYankPost", {
   desc = "Highlight when yanking (copying) text",
