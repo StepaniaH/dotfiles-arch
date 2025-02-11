@@ -23,7 +23,17 @@ return {
           close_icon = ' ',
           left_trunc_marker = ' ',
           right_trunc_marker = ' ',
-        }
+          indicator = {
+            icon = '▎',
+            style = 'icon',
+          },
+          max_name_length = 18,
+          max_prefix_length = 15,
+          truncate_names = true,
+          tab_size = 18,
+
+          separator_style = "thin",
+        },
       })
     end
   }
