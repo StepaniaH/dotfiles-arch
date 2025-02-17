@@ -8,6 +8,7 @@ g.have_nerd_font = true
 
 opt.number = true
 opt.relativenumber = true
+opt.wrap = false
 opt.expandtab = true
 opt.tabstop = 2
 opt.softtabstop = 2
