@@ -10,3 +10,7 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+function addrss() {
+  echo "$1" >> ~/.config/newsboat/urls
+}
