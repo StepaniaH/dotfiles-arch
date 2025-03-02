@@ -1,7 +1,7 @@
 # All self-written functions
 
 
-# Change the current working directory when exiting Yazi.
+# Change the current working directory when exiting Yazi
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
@@ -11,6 +11,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+
+# Add rss feed to newsboat
 function addrss() {
   echo "$1" >> ~/.config/newsboat/urls
 }
