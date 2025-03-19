@@ -89,12 +89,20 @@ Unknown = ''
 Windows = '󰍲'
 
 [directory]
-truncation_length = 0
+truncation_length = 3
 truncation_symbol = '.../'
 truncate_to_repo = false
 fish_style_pwd_dir_length = 1
 style = 'bold fg:text_two bg:bar_two'
 format = '[ $path ]($style)'
+# substitutions = [
+#   { pattern = "Documents", replacement = " " },
+#   { pattern = "Downloads", replacement = " " },
+#   { pattern = "Music", replacement = " " },
+#   { pattern = "Pictures", replacement = " " },
+#   
+#   { pattern = "(?<=/)([^/]{10})[^/]+", replacement = "$1..." }
+# ]
 
 [custom.home]
 when = ' test "$HOME" = "$PWD" '
