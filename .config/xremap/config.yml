@@ -1,4 +1,7 @@
 modmap:
-  - name: Global
+  - name: capslock to esc and ctrl_L
     remap:
-      CapsLock: Esc
+      CapsLock:
+        held: KEY_LEFTCTRL
+        alone: KEY_ESC
+
