@@ -5,8 +5,8 @@
 **Note: This repository has been archived and is no longer maintained.**
 
 I previously managed my configuration files using two separate repositories:
-- `dotfiles-arch`: for macOS configurations ([here](https://github.com/StepaniaH/dotfiles-mac))
-- `dotfiles-mac`: for Arch Linux configurations (this repository)
+- `dotfiles-mac`: for macOS configurations ([here](https://github.com/StepaniaH/dotfiles-mac))
+- `dotfiles-arch`: for Arch Linux configurations (this repository)
 
 To simplify management and improve consistency across my environments, I have merged these repositories into a new unified dotfiles repository:
 
